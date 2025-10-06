@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Dr. Shaju</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Dr. Shaju</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="menu-btn" class="menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="hero-content narrow">
+      <h1>Photo Gallery</h1>
+      <p>Moments from TV serials, events, and behind-the-scenes</p>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Grid -->
+  <main class="container">
+    <section class="gallery-grid grid-3">
+      <!-- Photo 1 -->
+      <div class="gallery-item">
+        <img src="assets/images/gallery1.jpg" alt="Dr. Shaju Event 1" onclick="openLightbox(this)">
+      </div>
+      <!-- Photo 2 -->
+      <div class="gallery-item">
+        <img src="assets/images/gallery2.jpg" alt="Dr. Shaju TV Shoot" onclick="openLightbox(this)">
+      </div>
+      <!-- Photo 3 -->
+      <div class="gallery-item">
+        <img src="assets/images/gallery3.jpg" alt="Dr. Shaju Portrait" onclick="openLightbox(this)">
+      </div>
+      <!-- Photo 4 -->
+      <div class="gallery-item">
+        <img src="assets/images/gallery4.jpg" alt="Dr. Shaju Interview" onclick="openLightbox(this)">
+      </div>
+      <!-- Add more photos as needed -->
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded Photo">
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">Dr. Shaju</a>
+        <p class="muted">© 2025 Dr. Shaju. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+91 9876543210<br>email@example.com</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#" target="_blank">Instagram</a> · <a href="#" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
